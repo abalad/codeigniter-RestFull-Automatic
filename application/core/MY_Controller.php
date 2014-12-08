@@ -68,31 +68,50 @@ class MY_Controller extends REST_Controller{
             $this->response(array('error' => 'Registro não Encontrado'), 404);
         }
 
-
     }
 
     function api_post()
     {
-        //$this->some_model->updateUser( $this->get('id') );
-        $message = array('id' => $this->get('id'), 'name' => $this->post('name'), 'email' => $this->post('email'), 'message' => 'ADDED!');
-        
-        $this->response($message, 200); // 200 being the HTTP response code
+
+        $query = $this->db->insert($this->_name_table, $this->post()); 
+
+        if($query)
+        {
+            $this->response($query->result(), 200); // 200 being the HTTP response code
+        }
+        else
+        {
+            $this->response(array('error' => 'Não pode incluir este registro'), 404);
+        }
     }
 
     function api_put()
     {
-        //$this->some_model->updateUser( $this->get('id') );
-        $message = array('id' => $this->get('id'), 'name' => $this->post('name'), 'email' => $this->post('email'), 'message' => 'EDITED!');
-        
-        $this->response($message, 200); // 200 being the HTTP response code
+        $query = $this->db->update($this->_name_table, $this->put(), array('id' => $this->get('id')));
+
+        if($query)
+        {
+            $this->response($query->result(), 200); // 200 being the HTTP response code
+        }
+        else
+        {
+            $this->response(array('error' => 'Não pode Alterar este registro'), 404);
+        }
     }    
     
     function api_delete()
     {
-    	//$this->some_model->deletesomething( $this->get('id') );
-        $message = array('id' => $this->get('id'), 'message' => 'DELETED!');
-        
-        $this->response($message, 200); // 200 being the HTTP response code
+        $query = $this->db->delete($this->_name_table, array('id' => $this->delete('id')));
+
+        if($query)
+        {
+            $this->response($query->result(), 200); // 200 being the HTTP response code
+        }
+        else
+        {
+            $this->response(array('error' => 'Não pode Deletar este registro'), 404);
+        }
+
     }
     
     function apiAll_get()

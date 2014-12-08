@@ -54,7 +54,7 @@ To make requests, simply call as follows:
 	http://example.com/index.php/api/NameTable/query/id/1 DELETE 
 
 
-_Note: The word query can be replaced by any palava, staying for example set:._
+_Note: The word query can be replaced by any word, staying for example set:._
 
 	http://example.com/index.php/api/Operators/Operator/id/1 GET
 	http://example.com/index.php/api/Operators/Operator/id/1 PUT

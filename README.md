@@ -1,5 +1,10 @@
 ## CodeIgniter RestFull Automatic
 
+Do you think repetivo having to create all standards methods for all tables to make a Restfull mapping?
+
+Welcome this is CodeIgniter Restfull Automatic.
+
+See the below its Advantages:
 
 A full implementation Restfull GET, PUT, POST, DELETE, automatic
 

@@ -23,7 +23,7 @@ The author chriskacerguis: https://github.com/chriskacerguis/codeigniter-restser
 
 ## Handling Requests
 
-To make requests, you must create within the Implementation Legislation application / controllers / api / a file with the name of the Table, the database to which you want to capture or handle the data.
+To make requests, you must create within the Implementation Legislation application / controllers / api / a file with the name of the Table NameTable.php, the database to which you want to capture or handle the data.
 
 Once this is done, create a class following the pattern of CodeIgniter, with the following code:
 

@@ -17,13 +17,13 @@ _Note: for 1.7.x support download v2.2 from Downloads tab_
 
 ## Installation
 
-Drag and drop the **application/libraries/Format.php** and **application/libraries/REST_Controller.php** files into your application's directories. To use `require_once` it at the top of your controllers to load it into the scope. Additionally, copy the **rest.php** file from **application/config** in your application's configuration directory. More information visit 
+Drag and drop the **application/libraries/Format.php**, **application/libraries/REST_Controller.php**,**application/core/MY_Controller.php** and **application/core/MY_Model.php** files into your application's directories. To use `require_once` it at the top of your controllers to load it into the scope. Additionally, copy the **rest.php** file from **application/config** in your application's configuration directory. More information visit 
 
 The author chriskacerguis: https://github.com/chriskacerguis/codeigniter-restserver
 
 ## Handling Requests
 
-To make requests, you must create within the Implementation Legislation application / controllers / api / a file with the name of the Table NameTable.php, the database to which you want to capture or handle the data.
+To make requests, you must create within the Implementation Legislation **application/controllers/api** a file with the name of the Table **NameTable.php**, the database to which you want to capture or handle the data.
 
 Once this is done, create a class following the pattern of CodeIgniter, with the following code:
 

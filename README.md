@@ -43,6 +43,24 @@ There, only with this code, you already will have a Restfull API, with GET, INSE
 
 You can create new methods in this class following the pattern of our friend chriskacerguis, where it has a very good API, where it was developed using his work.
 
+## Requests
+
+To make requests, simply call as follows:
+
+	http://example.com/index.php/api/NameTable/           GETALL
+	http://example.com/index.php/api/NameTable/query/id/1 GET 
+	http://example.com/index.php/api/NameTable/           POST	
+	http://example.com/index.php/api/NameTable/query/id/1 PUT 
+	http://example.com/index.php/api/NameTable/query/id/1 DELETE 
+
+
+_Note: The word query can be replaced by any palava, staying for example set:
+
+	http://example.com/index.php/api/Operators/Operator/id/1 GET
+	http://example.com/index.php/api/Operators/Operator/id/1 PUT
+	http://example.com/index.php/api/Operators/Operator/id/1 DELETE 
+._
+
 ## Contributions
 
 This project was developed based on the code written by chriskacerguis. Just created a way to make the standard methods of requests, a little easier to be implemented, while taking the complexity and usability of other methods.

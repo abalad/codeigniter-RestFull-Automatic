@@ -32,6 +32,12 @@ Once this is done, create a class following the pattern of CodeIgniter, with the
 	    }
 	}
 
+_Note: The table which you are mapping should have a Primary Key or Unico field called ID, otherwise you must recreate the method get or update with the new primary key._
+
 There, only with this code, you already will have a Restfull API, with GET, INSERT, DELETE, UPDATE.
 
-You can create new methods in this class following the pattern of our friend chriskacerguis, where it has a very good API, where it was developed using his work.	
+You can create new methods in this class following the pattern of our friend chriskacerguis, where it has a very good API, where it was developed using his work.
+
+## Contributions
+
+This project was developed based on the code written by chriskacerguis. Just created a way to make the standard methods of requests, a little easier to be implemented, while taking the complexity and usability of other methods.
